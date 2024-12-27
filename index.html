@@ -1,96 +1,250 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beneficios del Aceite de Aguaje</title>
-    <meta name="description" content="Descubre los increíbles beneficios del aceite de aguaje para tu piel y cabello. Un producto natural con propiedades excepcionales.">
+    <title>Descubre el Tesoro de la Amazonía:¡Aceite de Aguaje!</title>
+    <meta name="description" content="El aceite de aguaje es extraído de los frutos de la palmera de aguaje, una especie nativa de la Amazonía peruana. En la comunidad de Pacaya-Samiria, ubicada en la región de Loreto, las mujeres son las encargadas de recolectar y procesar los frutos de aguaje para obtener el aceite. 🌸✨ Con técnicas ancestrales transmitidas de generación en generación, estas mujeres cuidan cada paso del proceso, desde la recolección hasta la extracción del aceite, asegurando su pureza y calidad.">
+    <meta name="keywords" content="BellezaNatural, AceiteDeAguaje, CuidadoDeLaPiel, CabelloSaludable, SecretosDeLaAmazonía, HidrataciónProfunda, Antienvejecimiento, ElasticidadDeLaPiel, ReparaciónCapilar, BienestarNatural">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
+        /* Estilos generales */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7e9d7; /* Color más claro y cálido */
+            background-color: #f7f7f7;
         }
 
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
         }
 
         header {
-            background: linear-gradient(to right, #d89b67, #a15d15); /* Gradiente más cálido y atractivo */
+            background: linear-gradient(45deg, #4CAF50, #087f23);
             color: white;
             text-align: center;
-            padding: 40px 20px;
+            padding: 20px 0;
         }
 
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        /* Sección Hero */
         .hero-section {
             background: #fff;
             text-align: center;
-            padding: 50px 20px;
+            padding: 40px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .hero-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .hero-section p {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 30px;
         }
 
         .cta-button {
-            background: #d89b67;
+            display: inline-block;
+            background: #4CAF50;
             color: #fff;
-            padding: 20px 40px;
-            font-size: 1.3em;
+            padding: 15px 30px;
+            font-size: 1.2em;
             text-decoration: none;
-            border-radius: 8px;
-            transition: background 0.3s ease;
+            border-radius: 5px;
+            transition: background 0.3s;
         }
 
         .cta-button:hover {
-            background: #a15d15;
+            background: #087f23;
         }
 
-        footer {
-            background: #444;
-            color: #f7f7f7;
+        /* Beneficios */
+        .benefits-section {
+            background: #f9f9f9;
+            padding: 40px 20px;
             text-align: center;
-            padding: 20px 0;
+        }
+
+        .benefits-section h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .benefit {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .benefit h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .benefit p {
+            font-size: 1.1em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Sobre Nosotros */
+        .about-section {
+            background: #fff;
+            padding: 40px 20px;
             margin-top: 20px;
         }
 
-        footer a {
-            color: #d89b67;
-            text-decoration: none;
+        .about-section h2 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
         }
 
-        @media (max-width: 768px) {
-            header {
-                padding: 30px 10px;
-            }
-            .hero-section {
-                padding: 40px 10px;
-            }
+        .about-section p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            text-align: justify;
+            color: #666;
+        }
+
+        /* Testimonios */
+        .testimonials-section {
+            background: #f9f9f9;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .testimonials-section h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .testimonial {
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .testimonial strong {
+            display: block;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Descubre los Increíbles Beneficios del Aceite de Aguaje</h1>
+        <h1>Impulsa Tu Negocio con IA Personalizada</h1>
     </header>
 
+    <!-- Sección Hero -->
     <section class="hero-section">
         <div class="container">
-            <h2>¡Transforma tu rutina de belleza con el aceite de aguaje!</h2>
-            <p>El aceite de aguaje es un tesoro de la selva amazónica peruana, conocido por su riqueza en nutrientes esenciales y antioxidantes. Explora cómo este aceite puede mejorar la salud de tu piel y cabello.</p>
-            <a class="cta-button" href="#contact">¡Prueba el Aceite de Aguaje Hoy!</a>
+            <h2>¡Transforma tu empresa con GPTs Personalizados!</h2>
+            <p>Nuestro modelo de negocio se basa en la premisa de que la personalización y la adaptación específica a cada entorno profesional son claves para el éxito de los modelos de lenguaje. Con nuestras técnicas avanzadas de Prompt Engineering y un enfoque en la evolución continua, estamos preparados para revolucionar la forma en que las empresas utilizan la inteligencia artificial para mejorar sus procesos y alcanzar sus objetivos.</p>
+            <p>Nosotros le damos un enfoque más técnico y científico, soportando cada afirmación con investigaciones, reportes de OpenAI y organizaciones que desarrollan LLMs, permitiéndoles interactuar de forma eficaz y aprovechar al máximo este tipo de algoritmos generativos.</p>
+            <a class="cta-button" href="https://wa.me/573167581848"> ¡Comienza Hoy!</a>
         </div>
     </section>
 
+    <!-- Beneficios -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2>Beneficios Clave</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>Automatización</h3>
+                    <p>Ahorra tiempo y dinero delegando tareas repetitivas a la inteligencia artificial.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Personalización Total</h3>
+                    <p>Diseñado específicamente para las necesidades de tu negocio.</p>
+                </div>
+                <div class="benefit">
+                    <h3>Mejor Toma de Decisiones</h3>
+                    <p>Obtén insights valiosos basados en datos reales y procesados por IA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section class="about-section">
+        <div class="container">
+            <h2>Sobre Nosotros</h2>
+            <p>En Smart Prompt, nos especializamos en crear GPTs Personalizados y soluciones avanzadas de inteligencia artificial adaptadas a cada negocio. Nuestro objetivo es empoderar a las empresas para que puedan lograr más con menos esfuerzo, mejorando sus procesos y resultados. Con un enfoque en la personalización, nos aseguramos de que cada modelo se ajuste perfectamente a tus necesidades.</p>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>Lo que Dicen Nuestros Clientes</h2>
+            <div class="testimonial">
+                "Gracias a los GPTs personalizados, hemos reducido el tiempo de respuesta en nuestro servicio al cliente en un 50%. ¡Increíble!"
+                <strong>- María López, Directora de Operaciones</strong>
+            </div>
+            <div class="testimonial">
+                "La automatización de tareas administrativas nos ha permitido ahorrar cientos de horas de trabajo al año. No podríamos estar más satisfechos."
+                <strong>- Juan Pérez, CEO de TechSolutions</strong>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Beneficios del Aceite de Aguaje. Todos los derechos reservados.</p>
-            <p>Contacto: <a href="mailto:info@aceitedeaguaje.com">info@aceitedeaguaje.com</a></p>
+            <p>&copy; 2024 GPTs Personalizados. Todos los derechos reservados.</p>
+            <p>Contacto: <a href="mailto:andrescelemincardoso@gmail.com">andrescelemincardoso@gmail.com</a></p>
+            <p>Teléfono: <a href="https://wa.me/573167581848">+57 316 758 1848</a></p>
         </div>
     </footer>
 </body>
+
 </html>
